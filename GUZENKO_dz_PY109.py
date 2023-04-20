@@ -5,6 +5,7 @@ class Tomato:
     def __init__(self, _index=1):
         self._index = _index
         self._state = Tomato.states.get(self._index)
+        # state это словарь Tomato.states, ключи которого хранятся в self.index
 
     def grow(self):
         self._index += 1
